@@ -18,7 +18,10 @@ ray.init(address="127.0.0.1:6379", namespace="serve")
 serve.start(detached=True)
 
 MODEL_EXPORT_PATH = os.environ['MODEL_EXPORT_PATH']
+
 # FACED SOME IMPORT ISSUE so made everything as single file -DEBUG HERE
+# reason:  Worker didnt finding the required models if placed separately - need more exploration
+# So added all the dependencies classes in single file :)
 
 class Encoder(object):
     def __init__(self,cat_cols=None,path="../../../models/") -> None:
