@@ -8,7 +8,7 @@ import missingno
 
 @st.cache
 def get_data():
-    df = pd.read_csv("data/hotel_booking.csv")
+    df = pd.read_csv("data/hotel_booking.zip")
     return df
 
 def app():

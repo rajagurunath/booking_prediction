@@ -2,3 +2,9 @@ env/*
 *.pkl
 models/*
 *.csv
+
+venv/
+.ipynb_checkpoints/
+*/__pycache__/
+*/catboost_info/
+imgs/*png

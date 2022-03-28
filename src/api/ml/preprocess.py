@@ -58,7 +58,7 @@ if __name__ == "__main__":
     encoder = Encoder(cat_cols=cat_cols,path=EXPORT_PATH)
     encoder.fit(df)
     encoder.save()
-    encoder = Encoder()
+    encoder = Encoder(path=EXPORT_PATH)
     encoder.load()
     print(df.iloc[0])
     print(encoder.transform(df.iloc[:5,:]))
