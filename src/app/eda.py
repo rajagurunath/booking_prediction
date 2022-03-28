@@ -24,14 +24,14 @@ def app():
     
     st.write('General Visualizations')
     html_content = df.save_as_html(output=True)
-    components.html(html_content, width=800, height=350)
+    components.html(html_content, width=900, height=350)
 
 
 
     st.title(f"Analysing the columns using target as `is_canceled` ")
     df.intent = ["is_canceled"]
     html_content = df.save_as_html(output=True)
-    components.html(html_content, width=800, height=350)
+    components.html(html_content, width=900, height=350)
 
 
 app()

@@ -6,5 +6,5 @@ lux-api
 streamlit
 ray
 ray[serve]
-streamlit
+streamlit==8.0.4
 yellowbrick
